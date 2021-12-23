@@ -39,21 +39,8 @@
     left: 120px;
 }
 
-.logo1 {
-    max-width: 30%;
-    max-height: 100px;
-    position: absolute;
-    left: 0px;
-    top: 0;
-}
 
-.logo2 {
-    max-width: 30%;
-    max-height: 100px;
-    position: absolute;
-    left: 38px;
-    bottom: 700px;
-}
+
 //Larger than Tablet screen: 80.0rem (1280px)
 @media only screen and (min-width: 640px) {
    .container {
