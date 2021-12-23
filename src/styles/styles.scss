@@ -8,7 +8,35 @@
     height: 95vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.content {
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+    height: 90vh;
+    max-width: 90vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+//for background image
+.content::before {    
+    content: "";
+    background-image: url("../images/photo_2021-12-23\ 14.24.12.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 8%;
+}
+
+// to make text not by background opacity
+.text {
+    position: relative;
 }
 
 .phoneNumber {
@@ -32,40 +60,23 @@
     height: 47px;
 }
 
-.doc-image {
-    position: absolute;
-    bottom: 520px;
-    max-width: 300px;
-    left: 120px;
+.textField {
+    max-width: 100%;
+}
+
+.logo {
+    display: none;
 }
 
 
-
-//Larger than Tablet screen: 80.0rem (1280px)
+// Larger than Mobile screen: 40.0rem (640px)
 @media only screen and (min-width: 640px) {
    .container {
+      display: flex;
+   }
+
+   .logo {
        display: flex;
-       justify-content: flex-start;
-       padding-left: 2rem;
-       height: 90vh;
-   }
-   .doc-image {
-       left: 550px;
-       bottom: 90px;
-       max-width: 450px;
    }
 }
 
-@media only screen and (min-width: 1200px) {
-    .container {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 50px;
-        height: 80vh;
-    }
-
-    .doc-image {
-        bottom: 200px;
-    }
-    
-}
