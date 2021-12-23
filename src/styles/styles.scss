@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.phoneNumber {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.forgotPassword {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.button {
+    width: 100%;
+    height: 47px;
+}
+
+.doc-image {
+    position: absolute;
+    bottom: 520px;
+    max-width: 300px;
+    left: 120px;
+}
+
+.logo1 {
+    max-width: 30%;
+    max-height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+.logo2 {
+    max-width: 30%;
+    max-height: 100px;
+    position: absolute;
+    left: 38px;
+    bottom: 700px;
+}
+//Larger than Tablet screen: 80.0rem (1280px)
+@media only screen and (min-width: 640px) {
+   .container {
+       display: flex;
+       justify-content: flex-start;
+       padding-left: 2rem;
+       height: 90vh;
+   }
+   .doc-image {
+       left: 550px;
+       bottom: 90px;
+       max-width: 450px;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
+        height: 80vh;
+    }
+
+    .doc-image {
+        bottom: 200px;
+    }
+    
+}
